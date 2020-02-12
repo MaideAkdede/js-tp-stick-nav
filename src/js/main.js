@@ -1,3 +1,8 @@
+/*
+1. Détectez la position top de l'élément `nav` au chargement de la page et comparez cette valeur avec le scroll vertical de la page.
+2. Ajoutez une classe `fixed-nav` au `body` quand le nombre de pixels scrollé est plus grand ou égal à la position `top` de la navigation par rapport à la fenêtre.
+3. Afin d'éviter un glissement dû au positionnement `static` de la navigation, ajoutez un `padding` à l'élément `body` pour compenser ce glissement.
+*/
 (function () {
     const StickyNav = {
         run (){
